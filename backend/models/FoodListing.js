@@ -10,7 +10,7 @@ const foodListingSchema = new mongoose.Schema(
     donorId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
     claimedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User', default: null },
   },
-  { timestamps: true } 
-);
+  { timestamps: true }
+); 
 
 module.exports = mongoose.model('FoodListing', foodListingSchema);
